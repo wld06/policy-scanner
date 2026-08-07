@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Policy Scanner",
+    "version": "0.1.0",
+    "description": "Analyze privacy policies and terms of service with AI and get a risk score",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Analyze this policy"
+    },
+    "permissions": ["activeTab", "scripting"]
+}

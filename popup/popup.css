@@ -1,0 +1,69 @@
+:root {
+    --bg: #14161a;
+    --text: #edeae0;
+    --muted: #8a8781;
+    --line: #2a2d33;
+
+    --sev-low: #4c7a63;
+    --sev-mid: #c98a2c;
+    --sev-high: #c13b2a;
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+html {
+    background: var(--bg);
+}
+
+body {
+    width: 360px;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+#analyze-btn {
+    width: 100%;
+    padding: 10px 14px;
+    
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--bg);
+    background: var(--text);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#analyze-btn:hover {
+    background: #fff;
+}
+
+#analyze-btn:active {
+    transform: translateY(1px);
+}
+
+#analyze-btn:disabled {
+    background: var(--line);
+    color: var(--muted);
+    cursor: default;
+    transform: none;
+}
